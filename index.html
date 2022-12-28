@@ -15,16 +15,15 @@
         }
         body{
             margin: 0;
-            
+            background-size: cover;
             background-image: linear-gradient(#e3b705c7, #931f1dc2), url(./Assets/pexels-rene-asmussen-3990359.jpg);
-            height: 180vh;
+            height: 340vh;
         }
         .navbar{
             width: 100%;
-            height: 20%;
+            height: 140px;
             background-color: white;
             display: flex;
-            position: fixed;
         }
         .navbar h1{
             margin: 10px;
@@ -66,55 +65,63 @@
         .navbar ul li:hover:after{
             width: 100%;
         }
-        .yellowbar{
-            width: 100%;
-            height: 20px;
-            background-color: #e3b705;
-        }
         .contentparent{
             display: flex;
             width: 80vw;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 150px;
+            margin-top: 10px;
         }
         .content1{
             width: 40vw;
-            height: 80vh;
+            height: 150vh;
             background-color: white;
             border-top-left-radius: 50px;
             margin-top: 50px;
         }
         .content2{
             width: 40vw;
-            height: 80vh;
+            height: 150vh;
             background-color: rgb(255, 255, 255);
             border-top-right-radius: 50px;
             margin-top: 50px;
         }
+
         .welcome2{
             padding: 10px;
+            font-size: 18px;
         }
         .welcome2 ul{
-            font-size: 20px;
+            font-size: 1.3vw;
+        }
+        #remontImage{
+            width: 36vw;
         }
         .welcome1{
             padding: 10px;
-            font-size: 18px;
+        }
+        .welcome1 p{
+            font-size: 1.3vw;
         }
         .cnt{
             width: 80vw;
             margin-left: auto;
             margin-right: auto;
-            height: 70vh;
+            height: 110vh;
             background-color: white;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius : 50px;
             padding: 30px;
             display: flex;
         }
+        .text1{
+            padding: 20px;
+        }
         .text1 p{
-            font-size: 25px;
+            font-size: 1.3vw;
+        }
+        .image1 img{
+            width: 20vw;
         }
     </style>
 </head>
@@ -128,9 +135,6 @@
         </ul>
         
     </div>
-    <div class="yellowbar">
-
-        </div>
     <div class="contentparent">
 
         <div class="content1">
@@ -139,12 +143,12 @@
                 <h1>Kim jesteśmy?</h1>
                 <h2>Sigo Group - Arkadiusz Pacanowski</h2>
                 <p>
-                    Planując postawienie konstrukcji budowlanej, każdy chce osiągnąć profesjonalne <br>i trwałe efekty na lata. 
-                    W pojedynkę trudno o nich myśleć,<br> gdy jest się pozbawionym dostępu do specjalistycznego sprzętu i wiedzy na temat realizacji prac. <br>
+                    Planując postawienie konstrukcji budowlanej, każdy chce osiągnąć profesjonalne i trwałe efekty na lata. 
+                    W pojedynkę trudno o nich myśleć, gdy jest się pozbawionym dostępu do specjalistycznego sprzętu i wiedzy na temat realizacji prac.
                     Oczekiwane rezultaty w zakresie budowy domów zapewnia natomiast współpraca ze sprawdzoną i zaufaną firmą świadczącą usługi budowlane 
-                    – w <b>Zielonej Górze</b> można liczyć na nasze fachowe i kompleksowe<br> wsparcie na tym polu. 
-                    W ciągu wieloletniej działalności <br>wykonaliśmy mnóstwo projektów na zlecenie klientów indywidualnych, <br>
-                    dzięki czemu posiadamy niezbędną wiedzę i doświadczenie. <br>
+                    – w <b>Zielonej Górze</b> można liczyć na nasze fachowe i kompleksowe wsparcie na tym polu. 
+                    W ciągu wieloletniej działalności wykonaliśmy mnóstwo projektów na zlecenie klientów indywidualnych, 
+                    dzięki czemu posiadamy niezbędną wiedzę i doświadczenie.
                     <b>
                         Zachęcamy do poznania naszej oferty i nawiązania owocnej współpracy!
                     </b>
@@ -168,7 +172,7 @@
                     <li>Współfinansowanie projektów budowlanych</li>
                 </ul>
             </div>
-
+            <img src="./Assets/remont.jpg" alt="remont" id="remontImage">            
         </div>
         
     </div>
@@ -177,19 +181,18 @@
         <div class="text1">
             <h1>Korzystne cenowo usługi budowlane</h1>
 
-            <p>Stawiamy na rzetelność w realizacji zleceń i zawsze podchodzimy do nich w sposób indywidualny. <br>
-                Prace przy budowie domów zaczynamy od dokładnej analizy potrzeb klienta i otoczenia, w którym inwestycja <br>
-                będzie wykonywana. Uwzględniając wszystkie niezbędne czynniki, przygotowujemy plan działania i dobieramy <br>
-                odpowiednie narzędzia, materiały oraz elementy konstrukcyjne. Zdajemy sobie sprawę z tego, że ich jakość <br>
-                w dużym stopniu wpływa na efekty świadczonych usług budowlanych, dlatego współpracujemy wyłącznie z wysoko <br>
-                ocenianymi dostawcami i producentami, których wyroby cieszą się dobrymi opiniami. Pozwala nam to na  <br>
-                budowę domów oraz stawianie innych obiektów wyróżniających się wieloletnią trwałością i odpornością na  <br>
-                niekorzystny wpływ czynników zewnętrznych.
+            <p>Stawiamy na rzetelność w realizacji zleceń i zawsze podchodzimy do nich w sposób indywidualny.
+                Prace przy budowie domów zaczynamy od dokładnej analizy potrzeb  klienta i otoczenia, w którym inwestycja
+                będzie wykonywana. Uwzględniając wszystkie niezbędne czynniki,  przygotowujemy plan działania i dobieramy
+                odpowiednie narzędzia, materiały oraz elementy konstrukcyjne. Następnie zabieramy się do działania -
+                dbając o dokładność realizujemy plany i według ustaleń budujemy. <b>Nasi klienci byli zawsze zadowoleni.</b>
             </p>
         </div>
         
         <div class="image1">
-
+            <img src="./Assets/zdjęcie1_dom_ocieplany.jpg" alt="Dom_Ocieplany">
+            <img src="./Assets/lampki.jpg" alt="lampki">
+            <img src="./Assets/podburzony_dom.jpg" alt="dom">
         </div>
 
 
