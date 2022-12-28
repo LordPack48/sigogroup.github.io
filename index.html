@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Budowlana</title>
+    <style>
+        *{
+            font-family: 'Oswald', sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            
+            background-image: linear-gradient(#e3b705c7, #931f1dc2), url(./Assets/pexels-rene-asmussen-3990359.jpg);
+            height: 200vh;
+        }
+        .navbar{
+            width: 100%;
+            height: 20%;
+            background-color: white;
+            display: flex;
+            position: fixed;
+        }
+        .navbar h1{
+            margin: 10px;
+            margin-left: 20px;
+        }
+        .LogoImage{
+            width: 135px;
+            height: 60px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 20px;
+        }
+        .navbar ul{
+            margin-top: 3%;
+            width: 80%;
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+        .navbar ul li{
+            position: relative;
+        }
+        .navbar ul li::after{
+            content: '';
+            height: 4px;
+            width: 0;
+            background: black;
+            position: absolute;
+            left: 0;
+            bottom: 7%;
+            transition: 0.3s;
+        }
+        .navbar ul li:hover:after{
+            width: 100%;
+        }
+        .yellowbar{
+            width: 100%;
+            height: 20px;
+            background-color: #e3b705;
+        }
+        .contentparent{
+            display: flex;
+            width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+        }
+        .content1{
+            width: 40vw;
+            height: 80vh;
+            background-color: white;
+            border-top-left-radius: 50px;
+            margin-top: 50px;
+        }
+        .content2{
+            width: 40vw;
+            height: 80vh;
+            background-color: rgb(255, 255, 255);
+            border-top-right-radius: 50px;
+            margin-top: 50px;
+        }
+        .welcome2{
+            padding: 10px;
+        }
+        .welcome2 ul{
+            font-size: 20px;
+        }
+        .welcome1{
+            padding: 10px;
+            font-size: 18px;
+        }
+        .cnt{
+            width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
+            height: 80vh;
+            background-color: white;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius : 50px;
+            padding: 30px;
+            display: flex;
+        }
+        .text1 p{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="./Assets/Logo.jpg" alt="Logo" class="LogoImage">
+        <h1>Arkadiusz Pacanowski</h1>
+        <ul>
+            <li><a href="#">Start</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+        </ul>
+        
+    </div>
+    <div class="yellowbar">
+
+        </div>
+    <div class="contentparent">
+
+        <div class="content1">
+
+            <div class="welcome1">
+                <h1>Kim jesteśmy?</h1>
+                <h2>Sigo Group - Arkadiusz Pacanowski</h2>
+                <p>
+                    Planując postawienie konstrukcji budowlanej, każdy chce osiągnąć profesjonalne <br>i trwałe efekty na lata. 
+                    W pojedynkę trudno o nich myśleć,<br> gdy jest się pozbawionym dostępu do specjalistycznego sprzętu i wiedzy na temat realizacji prac. <br>
+                    Oczekiwane rezultaty w zakresie budowy domów zapewnia natomiast współpraca ze sprawdzoną i zaufaną firmą świadczącą usługi budowlane 
+                    – w <b>Zielonej Górze</b> można liczyć na nasze fachowe i kompleksowe<br> wsparcie na tym polu. 
+                    W ciągu wieloletniej działalności <br>wykonaliśmy mnóstwo projektów na zlecenie klientów indywidualnych, <br>
+                    dzięki czemu posiadamy niezbędną wiedzę i doświadczenie. <br>
+                    <b>
+                        Zachęcamy do poznania naszej oferty i nawiązania owocnej współpracy!
+                    </b>
+                    
+                </p>
+            </div>
+            
+            
+
+        </div>
+        <div class="content2">
+
+            <div class="welcome2">
+                <h1>Zajmujemy się:</h1>
+                <ul>
+                    <li>Budowa domów</li>
+                    <li>Wykańczanie obiektów deweloperskich pod klucz</li>
+                    <li>Kompleksowe remonty mieszkań i domów</li>
+                    <li>Doradztwo techniczne oraz pomoc w optymalizacji kosztów</li>
+                    <li>Inwestowanie w nieruchomości</li>
+                    <li>Współfinansowanie projektów budowlanych</li>
+                </ul>
+            </div>
+
+        </div>
+        
+    </div>
+    
+    <div class="cnt">
+        <div class="text1">
+            <h1>Korzystne cenowo usługi budowlane</h1>
+
+            <p>Stawiamy na rzetelność w realizacji zleceń i zawsze podchodzimy do nich w sposób indywidualny. <br>
+                Prace przy budowie domów zaczynamy od dokładnej analizy potrzeb klienta i otoczenia, w którym inwestycja <br>
+                będzie wykonywana. Uwzględniając wszystkie niezbędne czynniki, przygotowujemy plan działania i dobieramy <br>
+                odpowiednie narzędzia, materiały oraz elementy konstrukcyjne. Zdajemy sobie sprawę z tego, że ich jakość <br>
+                w dużym stopniu wpływa na efekty świadczonych usług budowlanych, dlatego współpracujemy wyłącznie z wysoko <br>
+                ocenianymi dostawcami i producentami, których wyroby cieszą się dobrymi opiniami. Pozwala nam to na  <br>
+                budowę domów oraz stawianie innych obiektów wyróżniających się wieloletnią trwałością i odpornością na  <br>
+                niekorzystny wpływ czynników zewnętrznych.
+            </p>
+        </div>
+        
+        <div class="image1">
+
+        </div>
+
+
+    </div>
+    
+    
+</body>
+</html>

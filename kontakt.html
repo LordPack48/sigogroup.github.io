@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Budowlana</title>
+    <style>
+        *{
+            font-family: 'Oswald', sans-serif;
+        }
+        body{
+            margin: 0;
+            box-sizing: border-box;
+            background-image: linear-gradient(#e3b705c7, #931f1dc2), url(./Assets/pexels-rene-asmussen-3990359.jpg);
+            height: 160vh;
+        }
+        .navbar{
+            width: 100%;
+            height: 15%;
+            background-color: white;
+            display: flex;
+        }
+        .LogoImage{
+            width: 135px;
+            height: 60px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 20px;
+        }
+        .navbar ul{
+            margin-top: 3%;
+            width: 80%;
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+        .navbar ul li{
+            position: relative;
+        }
+        .navbar ul li::after{
+            content: '';
+            height: 4px;
+            width: 0;
+            background: black;
+            position: absolute;
+            left: 0;
+            bottom: 30%;
+            transition: 0.3s;
+        }
+        .navbar ul li:hover:after{
+            width: 100%;
+        }
+        .cnt{
+            width: 80vw;
+            height: 60vh;
+            background-color: white;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50px;
+            padding: 20px;
+        }
+        #header{
+            color: #e3b705c7;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="./Assets/Logo.jpg" alt="Logo" class="LogoImage">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </div>
+    <div class="cnt">
+        <h1 id="header">Kontakt</h1>
+        <h2>Zapraszamy do kontaktu telefonicznie: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0048 669 105 682</h2>
+        <h2>lub mailowo: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sigogroup@gmail.com</h2>
+        <br>
+        <h2>ul. Miodowa 4 <br>65-602 Zielona Góra</h2>
+    </div>
+</body>
+</html>
